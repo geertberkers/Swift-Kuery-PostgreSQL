@@ -16,7 +16,7 @@
 
 import SwiftKuery
 import CLibpq
-
+import LoggerAPI
 import Dispatch
 import Foundation
 
@@ -74,6 +74,8 @@ public class PostgreSQLConnection: Connection {
         if let options = options {
             for option in options {
                 switch option {
+                case .sslmode(let value):
+                    result += " sslmode = \(value)"                
                 case .options(let value):
                     result += " options = \(value)"
                 case .databaseName(let value):
@@ -126,6 +128,7 @@ public class PostgreSQLConnection: Connection {
             connection.connection = PQconnectdb(connectionParameters)
             
             if let error = String(validatingUTF8: PQerrorMessage(connection.connection)), !error.isEmpty {
+                Log.error(error)
                 return nil
             }
             else {
