@@ -8,9 +8,6 @@
     <script src="../js/jquery.min.js" defer></script>
     <script src="../js/jazzy.js" defer></script>
     
-    <script src="../js/lunr.min.js" defer></script>
-    <script src="../js/typeahead.jquery.js" defer></script>
-    <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
 
@@ -24,12 +21,6 @@
           SwiftKueryPostgreSQL Docs
         </a>
          (100% documented)
-      </p>
-    
-      <p class="header-col--secondary">
-        <form role="search" action="../search.json">
-          <input type="text" placeholder="Search documentation" data-typeahead>
-        </form>
       </p>
     
         <p class="header-col header-col--secondary">
@@ -62,18 +53,10 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a class="nav-group-name-link" href="../Enums.html">Enumerations</a>
+            <a class="nav-group-name-link" href="../Enums.html">Enums</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/ConnectionOptions.html">ConnectionOptions</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-group-name">
-            <a class="nav-group-name-link" href="../Structs.html">Structures</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Structs/PostgreSQLPreparedStatement.html">PostgreSQLPreparedStatement</a>
               </li>
             </ul>
           </li>
@@ -86,7 +69,7 @@
             <h1>PostgreSQLConnection</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">PostgreSQLConnection</span><span class="p">:</span> <span class="kt">Connection</span></code></pre>
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">PostgreSQLConnection</span><span class="p">:</span> <span class="kt">Connection</span></code></pre>
 
                 </div>
               </div>
@@ -103,9 +86,9 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:20SwiftKueryPostgreSQL0C13SQLConnectionC11isConnectedSbvp"></a>
+                    <a name="/s:vC20SwiftKueryPostgreSQL20PostgreSQLConnection11isConnectedSb"></a>
                     <a name="//apple_ref/swift/Property/isConnected" class="dashAnchor"></a>
-                    <a class="token" href="#/s:20SwiftKueryPostgreSQL0C13SQLConnectionC11isConnectedSbvp">isConnected</a>
+                    <a class="token" href="#/s:vC20SwiftKueryPostgreSQL20PostgreSQLConnection11isConnectedSb">isConnected</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -120,7 +103,7 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isConnected</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isConnected</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>
@@ -130,9 +113,9 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:20SwiftKueryPostgreSQL0C13SQLConnectionC12queryBuilder0aB005QueryG0Cvp"></a>
+                    <a name="/s:vC20SwiftKueryPostgreSQL20PostgreSQLConnection12queryBuilderC10SwiftKuery12QueryBuilder"></a>
                     <a name="//apple_ref/swift/Property/queryBuilder" class="dashAnchor"></a>
-                    <a class="token" href="#/s:20SwiftKueryPostgreSQL0C13SQLConnectionC12queryBuilder0aB005QueryG0Cvp">queryBuilder</a>
+                    <a class="token" href="#/s:vC20SwiftKueryPostgreSQL20PostgreSQLConnection12queryBuilderC10SwiftKuery12QueryBuilder">queryBuilder</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -147,7 +130,7 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">queryBuilder</span><span class="p">:</span> <span class="kt">QueryBuilder</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">queryBuilder</span><span class="p">:</span> <span class="kt">QueryBuilder</span></code></pre>
 
                         </div>
                       </div>
@@ -157,9 +140,9 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:20SwiftKueryPostgreSQL0C13SQLConnectionCACSS4host_s5Int32V4portSayAA17ConnectionOptionsOGSg7optionstcfc"></a>
+                    <a name="/s:FC20SwiftKueryPostgreSQL20PostgreSQLConnectioncFT4hostSS4portVs5Int327optionsGSqGSaOS_17ConnectionOptions___S0_"></a>
                     <a name="//apple_ref/swift/Method/init(host:port:options:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:20SwiftKueryPostgreSQL0C13SQLConnectionCACSS4host_s5Int32V4portSayAA17ConnectionOptionsOGSg7optionstcfc">init(host:port:options:)</a>
+                    <a class="token" href="#/s:FC20SwiftKueryPostgreSQL20PostgreSQLConnectioncFT4hostSS4portVs5Int327optionsGSqGSaOS_17ConnectionOptions___S0_">init(host:port:options:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -169,12 +152,30 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                       <div class="abstract">
                         <p>Initialize an instance of PostgreSQLConnection.</p>
 
+<div class="aside aside-parameter">
+    <p class="aside-title">Parameter</p>
+    Parameter host: The host of the PostgreSQL server to connect to.
+
+</div>
+
+<div class="aside aside-parameter">
+    <p class="aside-title">Parameter</p>
+    Parameter port: The port of the PostgreSQL server to connect to.
+
+</div>
+
+<div class="aside aside-parameter">
+    <p class="aside-title">Parameter</p>
+    Parameter options: A set of <code><a href="../Enums/ConnectionOptions.html">ConnectionOptions</a></code> to pass to the PostgreSQL server.
+
+</div>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">host</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">port</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">,</span> <span class="nv">options</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/ConnectionOptions.html">ConnectionOptions</a></span><span class="p">]?)</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="n">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">host</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">port</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">,</span> <span class="nv">options</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/ConnectionOptions.html">ConnectionOptions</a></span><span class="p">]?)</span></code></pre>
 
                         </div>
                       </div>
@@ -191,6 +192,7 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                               <td>
                                 <div>
                                   <p>The host of the PostgreSQL server to connect to.</p>
+
                                 </div>
                               </td>
                             </tr>
@@ -203,6 +205,7 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                               <td>
                                 <div>
                                   <p>The port of the PostgreSQL server to connect to.</p>
+
                                 </div>
                               </td>
                             </tr>
@@ -214,7 +217,8 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                               </td>
                               <td>
                                 <div>
-                                  <p>A set of <code><a href="../Enums/ConnectionOptions.html">ConnectionOptions</a></code> to pass to the PostgreSQL server.</p>
+                                  <p>A set of <code>ConnectionOptions</code> to pass to the PostgreSQL server.</p>
+
                                 </div>
                               </td>
                             </tr>
@@ -227,9 +231,9 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:20SwiftKueryPostgreSQL0C13SQLConnectionCAC10Foundation3URLV3url_tcfc"></a>
+                    <a name="/s:FC20SwiftKueryPostgreSQL20PostgreSQLConnectioncFT3urlV10Foundation3URL_S0_"></a>
                     <a name="//apple_ref/swift/Method/init(url:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:20SwiftKueryPostgreSQL0C13SQLConnectionCAC10Foundation3URLV3url_tcfc">init(url:)</a>
+                    <a class="token" href="#/s:FC20SwiftKueryPostgreSQL20PostgreSQLConnectioncFT3urlV10Foundation3URL_S0_">init(url:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -239,12 +243,18 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                       <div class="abstract">
                         <p>Initialize an instance of PostgreSQLConnection.</p>
 
+<div class="aside aside-parameter">
+    <p class="aside-title">Parameter</p>
+    Parameter url: A URL of the following form: Postgres://userid:pwd@host:port/db.
+
+</div>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="kt">URL</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="n">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="kt">URL</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -261,6 +271,7 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                               <td>
                                 <div>
                                   <p>A URL of the following form: Postgres://userid:pwd@host:port/db.</p>
+
                                 </div>
                               </td>
                             </tr>
@@ -273,9 +284,9 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:20SwiftKueryPostgreSQL0C13SQLConnectionC10createPool0aB0010ConnectionG0C10Foundation3URLV3url_AE0hG7OptionsV04poolL0tFZ"></a>
+                    <a name="/s:ZFC20SwiftKueryPostgreSQL20PostgreSQLConnection10createPoolFT3urlV10Foundation3URL11poolOptionsV10SwiftKuery21ConnectionPoolOptions_CS3_14ConnectionPool"></a>
                     <a name="//apple_ref/swift/Method/createPool(url:poolOptions:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:20SwiftKueryPostgreSQL0C13SQLConnectionC10createPool0aB0010ConnectionG0C10Foundation3URLV3url_AE0hG7OptionsV04poolL0tFZ">createPool(url:poolOptions:)</a>
+                    <a class="token" href="#/s:ZFC20SwiftKueryPostgreSQL20PostgreSQLConnection10createPoolFT3urlV10Foundation3URL11poolOptionsV10SwiftKuery21ConnectionPoolOptions_CS3_14ConnectionPool">createPool(url:poolOptions:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -285,12 +296,30 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                       <div class="abstract">
                         <p>Create a connection pool for PostgreSQLConnection&rsquo;s.</p>
 
+<div class="aside aside-parameter">
+    <p class="aside-title">Parameter</p>
+    Parameter url: A URL of the PostgreSQL server of the following form: Postgres://userid:pwd@host:port/db.
+
+</div>
+
+<div class="aside aside-parameter">
+    <p class="aside-title">Parameter</p>
+    Parameter poolOptions: A set of <code>ConnectionPoolOptions</code> to configure the created pool.
+
+</div>
+
+<div class="aside aside-returns">
+    <p class="aside-title">Returns</p>
+    The <code>ConnectionPool</code> of <code>PostgreSQLConnection</code>.
+
+</div>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">createPool</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span> <span class="nv">poolOptions</span><span class="p">:</span> <span class="kt">ConnectionPoolOptions</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">ConnectionPool</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">createPool</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span> <span class="nv">poolOptions</span><span class="p">:</span> <span class="kt">ConnectionPoolOptions</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">ConnectionPool</span></code></pre>
 
                         </div>
                       </div>
@@ -307,6 +336,7 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                               <td>
                                 <div>
                                   <p>A URL of the PostgreSQL server of the following form: Postgres://userid:pwd@host:port/db.</p>
+
                                 </div>
                               </td>
                             </tr>
@@ -319,6 +349,7 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                               <td>
                                 <div>
                                   <p>A set of <code>ConnectionPoolOptions</code> to configure the created pool.</p>
+
                                 </div>
                               </td>
                             </tr>
@@ -328,6 +359,7 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                       <div>
                         <h4>Return Value</h4>
                         <p>The <code>ConnectionPool</code> of <code>PostgreSQLConnection</code>.</p>
+
                       </div>
                     </section>
                   </div>
@@ -335,9 +367,9 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:20SwiftKueryPostgreSQL0C13SQLConnectionC10createPool0aB0010ConnectionG0CSS4host_s5Int32V4portSayAA0H7OptionsOGSg7optionsAE0hgL0V04poolL0tFZ"></a>
+                    <a name="/s:ZFC20SwiftKueryPostgreSQL20PostgreSQLConnection10createPoolFT4hostSS4portVs5Int327optionsGSqGSaOS_17ConnectionOptions__11poolOptionsV10SwiftKuery21ConnectionPoolOptions_CS3_14ConnectionPool"></a>
                     <a name="//apple_ref/swift/Method/createPool(host:port:options:poolOptions:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:20SwiftKueryPostgreSQL0C13SQLConnectionC10createPool0aB0010ConnectionG0CSS4host_s5Int32V4portSayAA0H7OptionsOGSg7optionsAE0hgL0V04poolL0tFZ">createPool(host:port:options:poolOptions:)</a>
+                    <a class="token" href="#/s:ZFC20SwiftKueryPostgreSQL20PostgreSQLConnection10createPoolFT4hostSS4portVs5Int327optionsGSqGSaOS_17ConnectionOptions__11poolOptionsV10SwiftKuery21ConnectionPoolOptions_CS3_14ConnectionPool">createPool(host:port:options:poolOptions:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -347,12 +379,42 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                       <div class="abstract">
                         <p>Create a connection pool for PostgreSQLConnection&rsquo;s.</p>
 
+<div class="aside aside-parameter">
+    <p class="aside-title">Parameter</p>
+    Parameter host: The host of the PostgreSQL server to connect to.
+
+</div>
+
+<div class="aside aside-parameter">
+    <p class="aside-title">Parameter</p>
+    Parameter port: The port of the PostgreSQL server to connect to.
+
+</div>
+
+<div class="aside aside-parameter">
+    <p class="aside-title">Parameter</p>
+    Parameter options: A set of <code><a href="../Enums/ConnectionOptions.html">ConnectionOptions</a></code> to pass to the PostgreSQL server.
+
+</div>
+
+<div class="aside aside-parameter">
+    <p class="aside-title">Parameter</p>
+    Parameter poolOptions: A set of <code>ConnectionPoolOptions</code> to configure the created pool.
+
+</div>
+
+<div class="aside aside-returns">
+    <p class="aside-title">Returns</p>
+    The <code>ConnectionPool</code> of <code>PostgreSQLConnection</code>.
+
+</div>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">createPool</span><span class="p">(</span><span class="nv">host</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">port</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">,</span> <span class="nv">options</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/ConnectionOptions.html">ConnectionOptions</a></span><span class="p">]?,</span> <span class="nv">poolOptions</span><span class="p">:</span> <span class="kt">ConnectionPoolOptions</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">ConnectionPool</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">createPool</span><span class="p">(</span><span class="nv">host</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">port</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">,</span> <span class="nv">options</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/ConnectionOptions.html">ConnectionOptions</a></span><span class="p">]?,</span> <span class="nv">poolOptions</span><span class="p">:</span> <span class="kt">ConnectionPoolOptions</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">ConnectionPool</span></code></pre>
 
                         </div>
                       </div>
@@ -369,6 +431,7 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                               <td>
                                 <div>
                                   <p>The host of the PostgreSQL server to connect to.</p>
+
                                 </div>
                               </td>
                             </tr>
@@ -381,6 +444,7 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                               <td>
                                 <div>
                                   <p>The port of the PostgreSQL server to connect to.</p>
+
                                 </div>
                               </td>
                             </tr>
@@ -392,7 +456,8 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                               </td>
                               <td>
                                 <div>
-                                  <p>A set of <code><a href="../Enums/ConnectionOptions.html">ConnectionOptions</a></code> to pass to the PostgreSQL server.</p>
+                                  <p>A set of <code>ConnectionOptions</code> to pass to the PostgreSQL server.</p>
+
                                 </div>
                               </td>
                             </tr>
@@ -405,6 +470,7 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                               <td>
                                 <div>
                                   <p>A set of <code>ConnectionPoolOptions</code> to configure the created pool.</p>
+
                                 </div>
                               </td>
                             </tr>
@@ -414,6 +480,7 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                       <div>
                         <h4>Return Value</h4>
                         <p>The <code>ConnectionPool</code> of <code>PostgreSQLConnection</code>.</p>
+
                       </div>
                     </section>
                   </div>
@@ -421,9 +488,9 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:20SwiftKueryPostgreSQL0C13SQLConnectionC13descriptionOfSS0aB05Query_p5query_tKF"></a>
+                    <a name="/s:FC20SwiftKueryPostgreSQL20PostgreSQLConnection13descriptionOfFzT5queryP10SwiftKuery5Query__SS"></a>
                     <a name="//apple_ref/swift/Method/descriptionOf(query:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:20SwiftKueryPostgreSQL0C13SQLConnectionC13descriptionOfSS0aB05Query_p5query_tKF">descriptionOf(query:)</a>
+                    <a class="token" href="#/s:FC20SwiftKueryPostgreSQL20PostgreSQLConnection13descriptionOfFzT5queryP10SwiftKuery5Query__SS">descriptionOf(query:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -432,6 +499,19 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Return a String representation of the query.</p>
+
+<div class="aside aside-parameter">
+    <p class="aside-title">Parameter</p>
+    Parameter query: The query.
+
+</div>
+
+<div class="aside aside-returns">
+    <p class="aside-title">Returns</p>
+    A String representation of the query.
+
+</div>
+
 <div class="aside aside-throws">
     <p class="aside-title">Throws</p>
     QueryError.syntaxError if query build fails.
@@ -443,7 +523,7 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">descriptionOf</span><span class="p">(</span><span class="nv">query</span><span class="p">:</span> <span class="kt">Query</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">descriptionOf</span><span class="p">(</span><span class="nv">query</span><span class="p">:</span> <span class="kt">Query</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
 
                         </div>
                       </div>
@@ -460,6 +540,7 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                               <td>
                                 <div>
                                   <p>The query.</p>
+
                                 </div>
                               </td>
                             </tr>
@@ -469,6 +550,7 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                       <div>
                         <h4>Return Value</h4>
                         <p>A String representation of the query.</p>
+
                       </div>
                     </section>
                   </div>
@@ -476,9 +558,9 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:20SwiftKueryPostgreSQL0C13SQLConnectionC7connectyy0aB011QueryResultOc12onCompletion_tF"></a>
+                    <a name="/s:FC20SwiftKueryPostgreSQL20PostgreSQLConnection7connectFT12onCompletionFGSqO10SwiftKuery10QueryError_T__T_"></a>
                     <a name="//apple_ref/swift/Method/connect(onCompletion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:20SwiftKueryPostgreSQL0C13SQLConnectionC7connectyy0aB011QueryResultOc12onCompletion_tF">connect(onCompletion:)</a>
+                    <a class="token" href="#/s:FC20SwiftKueryPostgreSQL20PostgreSQLConnection7connectFT12onCompletionFGSqO10SwiftKuery10QueryError_T__T_">connect(onCompletion:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -488,12 +570,18 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                       <div class="abstract">
                         <p>Establish a connection with the database.</p>
 
+<div class="aside aside-parameter">
+    <p class="aside-title">Parameter</p>
+    Parameter onCompletion: The function to be called when the connection is established.
+
+</div>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">connect</span><span class="p">(</span><span class="nv">onCompletion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">QueryResult</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">connect</span><span class="p">(</span><span class="nv">onCompletion</span><span class="p">:</span> <span class="p">(</span><span class="kt">QueryError</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
 
                         </div>
                       </div>
@@ -510,6 +598,7 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                               <td>
                                 <div>
                                   <p>The function to be called when the connection is established.</p>
+
                                 </div>
                               </td>
                             </tr>
@@ -522,40 +611,9 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:20SwiftKueryPostgreSQL0C13SQLConnectionC11connectSync0aB011QueryResultOyF"></a>
-                    <a name="//apple_ref/swift/Method/connectSync()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:20SwiftKueryPostgreSQL0C13SQLConnectionC11connectSync0aB011QueryResultOyF">connectSync()</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Establish a connection with the database.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">connectSync</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">QueryResult</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>QueryError or nil if connection is succesful.</p>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:20SwiftKueryPostgreSQL0C13SQLConnectionC15closeConnectionyyF"></a>
+                    <a name="/s:FC20SwiftKueryPostgreSQL20PostgreSQLConnection15closeConnectionFT_T_"></a>
                     <a name="//apple_ref/swift/Method/closeConnection()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:20SwiftKueryPostgreSQL0C13SQLConnectionC15closeConnectionyyF">closeConnection()</a>
+                    <a class="token" href="#/s:FC20SwiftKueryPostgreSQL20PostgreSQLConnection15closeConnectionFT_T_">closeConnection()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -570,7 +628,7 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">closeConnection</span><span class="p">()</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">closeConnection</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
@@ -580,9 +638,9 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:20SwiftKueryPostgreSQL0C13SQLConnectionC7executey0aB05Query_p5query_SayypSgG10parametersyAE0G6ResultOc12onCompletiontF"></a>
+                    <a name="/s:FC20SwiftKueryPostgreSQL20PostgreSQLConnection7executeFT5queryP10SwiftKuery5Query_10parametersGSaGSqP___12onCompletionFOS1_11QueryResultT__T_"></a>
                     <a name="//apple_ref/swift/Method/execute(query:parameters:onCompletion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:20SwiftKueryPostgreSQL0C13SQLConnectionC7executey0aB05Query_p5query_SayypSgG10parametersyAE0G6ResultOc12onCompletiontF">execute(query:parameters:onCompletion:)</a>
+                    <a class="token" href="#/s:FC20SwiftKueryPostgreSQL20PostgreSQLConnection7executeFT5queryP10SwiftKuery5Query_10parametersGSaGSqP___12onCompletionFOS1_11QueryResultT__T_">execute(query:parameters:onCompletion:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -592,12 +650,30 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                       <div class="abstract">
                         <p>Execute a query with parameters.</p>
 
+<div class="aside aside-parameter">
+    <p class="aside-title">Parameter</p>
+    Parameter query: The query to execute.
+
+</div>
+
+<div class="aside aside-parameter">
+    <p class="aside-title">Parameter</p>
+    Parameter parameters: An array of the parameters.
+
+</div>
+
+<div class="aside aside-parameter">
+    <p class="aside-title">Parameter</p>
+    Parameter onCompletion: The function to be called when the execution of the query has completed.
+
+</div>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">execute</span><span class="p">(</span><span class="nv">query</span><span class="p">:</span> <span class="kt">Query</span><span class="p">,</span> <span class="nv">parameters</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">?],</span> <span class="nv">onCompletion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt">QueryResult</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">()))</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">execute</span><span class="p">(</span><span class="nv">query</span><span class="p">:</span> <span class="kt">Query</span><span class="p">,</span> <span class="nv">parameters</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">?],</span> <span class="nv">onCompletion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt">QueryResult</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">()))</span></code></pre>
 
                         </div>
                       </div>
@@ -614,6 +690,7 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                               <td>
                                 <div>
                                   <p>The query to execute.</p>
+
                                 </div>
                               </td>
                             </tr>
@@ -626,6 +703,7 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                               <td>
                                 <div>
                                   <p>An array of the parameters.</p>
+
                                 </div>
                               </td>
                             </tr>
@@ -638,6 +716,7 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                               <td>
                                 <div>
                                   <p>The function to be called when the execution of the query has completed.</p>
+
                                 </div>
                               </td>
                             </tr>
@@ -650,9 +729,9 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:20SwiftKueryPostgreSQL0C13SQLConnectionC7executey0aB05Query_p5query_yAE0G6ResultOc12onCompletiontF"></a>
+                    <a name="/s:FC20SwiftKueryPostgreSQL20PostgreSQLConnection7executeFT5queryP10SwiftKuery5Query_12onCompletionFOS1_11QueryResultT__T_"></a>
                     <a name="//apple_ref/swift/Method/execute(query:onCompletion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:20SwiftKueryPostgreSQL0C13SQLConnectionC7executey0aB05Query_p5query_yAE0G6ResultOc12onCompletiontF">execute(query:onCompletion:)</a>
+                    <a class="token" href="#/s:FC20SwiftKueryPostgreSQL20PostgreSQLConnection7executeFT5queryP10SwiftKuery5Query_12onCompletionFOS1_11QueryResultT__T_">execute(query:onCompletion:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -662,12 +741,24 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                       <div class="abstract">
                         <p>Execute a query.</p>
 
+<div class="aside aside-parameter">
+    <p class="aside-title">Parameter</p>
+    Parameter query: The query to execute.
+
+</div>
+
+<div class="aside aside-parameter">
+    <p class="aside-title">Parameter</p>
+    Parameter onCompletion: The function to be called when the execution of the query has completed.
+
+</div>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">execute</span><span class="p">(</span><span class="nv">query</span><span class="p">:</span> <span class="kt">Query</span><span class="p">,</span> <span class="nv">onCompletion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt">QueryResult</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">()))</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">execute</span><span class="p">(</span><span class="nv">query</span><span class="p">:</span> <span class="kt">Query</span><span class="p">,</span> <span class="nv">onCompletion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt">QueryResult</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">()))</span></code></pre>
 
                         </div>
                       </div>
@@ -684,6 +775,7 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                               <td>
                                 <div>
                                   <p>The query to execute.</p>
+
                                 </div>
                               </td>
                             </tr>
@@ -696,6 +788,7 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                               <td>
                                 <div>
                                   <p>The function to be called when the execution of the query has completed.</p>
+
                                 </div>
                               </td>
                             </tr>
@@ -708,9 +801,9 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:20SwiftKueryPostgreSQL0C13SQLConnectionC7executeySS_y0aB011QueryResultOc12onCompletiontF"></a>
+                    <a name="/s:FC20SwiftKueryPostgreSQL20PostgreSQLConnection7executeFTSS12onCompletionFO10SwiftKuery11QueryResultT__T_"></a>
                     <a name="//apple_ref/swift/Method/execute(_:onCompletion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:20SwiftKueryPostgreSQL0C13SQLConnectionC7executeySS_y0aB011QueryResultOc12onCompletiontF">execute(_:onCompletion:)</a>
+                    <a class="token" href="#/s:FC20SwiftKueryPostgreSQL20PostgreSQLConnection7executeFTSS12onCompletionFO10SwiftKuery11QueryResultT__T_">execute(_:onCompletion:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -720,12 +813,24 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                       <div class="abstract">
                         <p>Execute a raw query.</p>
 
+<div class="aside aside-parameter">
+    <p class="aside-title">Parameter</p>
+    Parameter query: A String with the query to execute.
+
+</div>
+
+<div class="aside aside-parameter">
+    <p class="aside-title">Parameter</p>
+    Parameter onCompletion: The function to be called when the execution of the query has completed.
+
+</div>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">execute</span><span class="p">(</span><span class="n">_</span> <span class="nv">raw</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">onCompletion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt">QueryResult</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">()))</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">execute</span><span class="p">(</span><span class="n">_</span> <span class="nv">raw</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">onCompletion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt">QueryResult</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">()))</span></code></pre>
 
                         </div>
                       </div>
@@ -736,12 +841,13 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                             <tr>
                               <td>
                                 <code>
-                                <em>raw</em>
+                                <em>query</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>A String with the raw query to execute.</p>
+                                  <p>A String with the query to execute.</p>
+
                                 </div>
                               </td>
                             </tr>
@@ -754,6 +860,7 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                               <td>
                                 <div>
                                   <p>The function to be called when the execution of the query has completed.</p>
+
                                 </div>
                               </td>
                             </tr>
@@ -766,9 +873,9 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:20SwiftKueryPostgreSQL0C13SQLConnectionC7executeySS_SayypSgG10parametersy0aB011QueryResultOc12onCompletiontF"></a>
+                    <a name="/s:FC20SwiftKueryPostgreSQL20PostgreSQLConnection7executeFTSS10parametersGSaGSqP___12onCompletionFO10SwiftKuery11QueryResultT__T_"></a>
                     <a name="//apple_ref/swift/Method/execute(_:parameters:onCompletion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:20SwiftKueryPostgreSQL0C13SQLConnectionC7executeySS_SayypSgG10parametersy0aB011QueryResultOc12onCompletiontF">execute(_:parameters:onCompletion:)</a>
+                    <a class="token" href="#/s:FC20SwiftKueryPostgreSQL20PostgreSQLConnection7executeFTSS10parametersGSaGSqP___12onCompletionFO10SwiftKuery11QueryResultT__T_">execute(_:parameters:onCompletion:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -778,12 +885,30 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                       <div class="abstract">
                         <p>Execute a raw query with parameters.</p>
 
+<div class="aside aside-parameter">
+    <p class="aside-title">Parameter</p>
+    Parameter query: A String with the query to execute.
+
+</div>
+
+<div class="aside aside-parameter">
+    <p class="aside-title">Parameter</p>
+    Parameter parameters: An array of the parameters.
+
+</div>
+
+<div class="aside aside-parameter">
+    <p class="aside-title">Parameter</p>
+    Parameter onCompletion: The function to be called when the execution of the query has completed.
+
+</div>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">execute</span><span class="p">(</span><span class="n">_</span> <span class="nv">raw</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">parameters</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">?],</span> <span class="nv">onCompletion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt">QueryResult</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">()))</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">execute</span><span class="p">(</span><span class="n">_</span> <span class="nv">raw</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">parameters</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">?],</span> <span class="nv">onCompletion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt">QueryResult</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">()))</span></code></pre>
 
                         </div>
                       </div>
@@ -794,12 +919,13 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                             <tr>
                               <td>
                                 <code>
-                                <em>raw</em>
+                                <em>query</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>A String with the raw query to execute.</p>
+                                  <p>A String with the query to execute.</p>
+
                                 </div>
                               </td>
                             </tr>
@@ -812,6 +938,7 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                               <td>
                                 <div>
                                   <p>An array of the parameters.</p>
+
                                 </div>
                               </td>
                             </tr>
@@ -824,6 +951,7 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                               <td>
                                 <div>
                                   <p>The function to be called when the execution of the query has completed.</p>
+
                                 </div>
                               </td>
                             </tr>
@@ -836,9 +964,9 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:20SwiftKueryPostgreSQL0C13SQLConnectionC7executeySS_s10DictionaryVySSypSgG10parametersy0aB011QueryResultOc12onCompletiontF"></a>
+                    <a name="/s:FC20SwiftKueryPostgreSQL20PostgreSQLConnection7executeFTSS10parametersGVs10DictionarySSGSqP___12onCompletionFO10SwiftKuery11QueryResultT__T_"></a>
                     <a name="//apple_ref/swift/Method/execute(_:parameters:onCompletion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:20SwiftKueryPostgreSQL0C13SQLConnectionC7executeySS_s10DictionaryVySSypSgG10parametersy0aB011QueryResultOc12onCompletiontF">execute(_:parameters:onCompletion:)</a>
+                    <a class="token" href="#/s:FC20SwiftKueryPostgreSQL20PostgreSQLConnection7executeFTSS10parametersGVs10DictionarySSGSqP___12onCompletionFO10SwiftKuery11QueryResultT__T_">execute(_:parameters:onCompletion:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -848,12 +976,30 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                       <div class="abstract">
                         <p>Execute a raw query with parameters.</p>
 
+<div class="aside aside-parameter">
+    <p class="aside-title">Parameter</p>
+    Parameter query: A String with the query to execute.
+
+</div>
+
+<div class="aside aside-parameter">
+    <p class="aside-title">Parameter</p>
+    Parameter parameters: A dictionary of the parameters with parameter names as the keys.
+
+</div>
+
+<div class="aside aside-parameter">
+    <p class="aside-title">Parameter</p>
+    Parameter onCompletion: The function to be called when the execution of the query has completed.
+
+</div>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">execute</span><span class="p">(</span><span class="n">_</span> <span class="nv">raw</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">parameters</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span><span class="kt">Any</span><span class="p">?],</span> <span class="nv">onCompletion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt">QueryResult</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">()))</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">execute</span><span class="p">(</span><span class="n">_</span> <span class="nv">raw</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">parameters</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span><span class="kt">Any</span><span class="p">?],</span> <span class="nv">onCompletion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt">QueryResult</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">()))</span></code></pre>
 
                         </div>
                       </div>
@@ -864,12 +1010,13 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                             <tr>
                               <td>
                                 <code>
-                                <em>raw</em>
+                                <em>query</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>A String with the raw query to execute.</p>
+                                  <p>A String with the query to execute.</p>
+
                                 </div>
                               </td>
                             </tr>
@@ -882,6 +1029,7 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                               <td>
                                 <div>
                                   <p>A dictionary of the parameters with parameter names as the keys.</p>
+
                                 </div>
                               </td>
                             </tr>
@@ -894,6 +1042,7 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                               <td>
                                 <div>
                                   <p>The function to be called when the execution of the query has completed.</p>
+
                                 </div>
                               </td>
                             </tr>
@@ -906,9 +1055,9 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:20SwiftKueryPostgreSQL0C13SQLConnectionC16prepareStatementy0aB05Query_p_yAE0H6ResultOc12onCompletiontF"></a>
-                    <a name="//apple_ref/swift/Method/prepareStatement(_:onCompletion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:20SwiftKueryPostgreSQL0C13SQLConnectionC16prepareStatementy0aB05Query_p_yAE0H6ResultOc12onCompletiontF">prepareStatement(_:onCompletion:)</a>
+                    <a name="/s:FC20SwiftKueryPostgreSQL20PostgreSQLConnection16prepareStatementFzP10SwiftKuery5Query_PS1_17PreparedStatement_"></a>
+                    <a name="//apple_ref/swift/Method/prepareStatement(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC20SwiftKueryPostgreSQL20PostgreSQLConnection16prepareStatementFzP10SwiftKuery5Query_PS1_17PreparedStatement_">prepareStatement(_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -918,12 +1067,30 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                       <div class="abstract">
                         <p>Prepare statement.</p>
 
+<div class="aside aside-parameter">
+    <p class="aside-title">Parameter</p>
+    Parameter query: The query to prepare statement for.
+
+</div>
+
+<div class="aside aside-returns">
+    <p class="aside-title">Returns</p>
+    The prepared statement.
+
+</div>
+
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    QueryError.syntaxError if query build fails, or a database error if it fails to prepare statement.
+
+</div>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">prepareStatement</span><span class="p">(</span><span class="n">_</span> <span class="nv">query</span><span class="p">:</span> <span class="kt">Query</span><span class="p">,</span> <span class="nv">onCompletion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt">QueryResult</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">()))</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">prepareStatement</span><span class="p">(</span><span class="n">_</span> <span class="nv">query</span><span class="p">:</span> <span class="kt">Query</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">PreparedStatement</span></code></pre>
 
                         </div>
                       </div>
@@ -940,23 +1107,17 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                               <td>
                                 <div>
                                   <p>The query to prepare statement for.</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>onCompletion</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The function to be called when the statement has been prepared.</p>
+
                                 </div>
                               </td>
                             </tr>
                           </tbody>
                         </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The prepared statement.</p>
+
                       </div>
                     </section>
                   </div>
@@ -964,9 +1125,9 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:20SwiftKueryPostgreSQL0C13SQLConnectionC16prepareStatementySS_y0aB011QueryResultOc12onCompletiontF"></a>
-                    <a name="//apple_ref/swift/Method/prepareStatement(_:onCompletion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:20SwiftKueryPostgreSQL0C13SQLConnectionC16prepareStatementySS_y0aB011QueryResultOc12onCompletiontF">prepareStatement(_:onCompletion:)</a>
+                    <a name="/s:FC20SwiftKueryPostgreSQL20PostgreSQLConnection16prepareStatementFzSSP10SwiftKuery17PreparedStatement_"></a>
+                    <a name="//apple_ref/swift/Method/prepareStatement(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC20SwiftKueryPostgreSQL20PostgreSQLConnection16prepareStatementFzSSP10SwiftKuery17PreparedStatement_">prepareStatement(_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -976,12 +1137,30 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                       <div class="abstract">
                         <p>Prepare statement.</p>
 
+<div class="aside aside-parameter">
+    <p class="aside-title">Parameter</p>
+    Parameter raw: A String with the query to prepare statement for.
+
+</div>
+
+<div class="aside aside-returns">
+    <p class="aside-title">Returns</p>
+    The prepared statement.
+
+</div>
+
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    QueryError.syntaxError if query build fails, or a database error if it fails to prepare statement.
+
+</div>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">prepareStatement</span><span class="p">(</span><span class="n">_</span> <span class="nv">raw</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">onCompletion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt">QueryResult</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">()))</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">prepareStatement</span><span class="p">(</span><span class="n">_</span> <span class="nv">raw</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">PreparedStatement</span></code></pre>
 
                         </div>
                       </div>
@@ -998,23 +1177,17 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                               <td>
                                 <div>
                                   <p>A String with the query to prepare statement for.</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>onCompletion</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The function to be called when the statement has been prepared.</p>
+
                                 </div>
                               </td>
                             </tr>
                           </tbody>
                         </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The prepared statement.</p>
+
                       </div>
                     </section>
                   </div>
@@ -1022,9 +1195,9 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:20SwiftKueryPostgreSQL0C13SQLConnectionC7executey0aB017PreparedStatement_p08preparedH0_yAE11QueryResultOc12onCompletiontF"></a>
+                    <a name="/s:FC20SwiftKueryPostgreSQL20PostgreSQLConnection7executeFT17preparedStatementP10SwiftKuery17PreparedStatement_12onCompletionFOS1_11QueryResultT__T_"></a>
                     <a name="//apple_ref/swift/Method/execute(preparedStatement:onCompletion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:20SwiftKueryPostgreSQL0C13SQLConnectionC7executey0aB017PreparedStatement_p08preparedH0_yAE11QueryResultOc12onCompletiontF">execute(preparedStatement:onCompletion:)</a>
+                    <a class="token" href="#/s:FC20SwiftKueryPostgreSQL20PostgreSQLConnection7executeFT17preparedStatementP10SwiftKuery17PreparedStatement_12onCompletionFOS1_11QueryResultT__T_">execute(preparedStatement:onCompletion:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1034,12 +1207,24 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                       <div class="abstract">
                         <p>Execute a prepared statement.</p>
 
+<div class="aside aside-parameter">
+    <p class="aside-title">Parameter</p>
+    Parameter preparedStatement: The prepared statement to execute.
+
+</div>
+
+<div class="aside aside-parameter">
+    <p class="aside-title">Parameter</p>
+    Parameter onCompletion: The function to be called when the execution has completed.
+
+</div>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">execute</span><span class="p">(</span><span class="nv">preparedStatement</span><span class="p">:</span> <span class="kt">PreparedStatement</span><span class="p">,</span> <span class="nv">onCompletion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt">QueryResult</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">()))</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">execute</span><span class="p">(</span><span class="nv">preparedStatement</span><span class="p">:</span> <span class="kt">PreparedStatement</span><span class="p">,</span> <span class="nv">onCompletion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt">QueryResult</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">()))</span></code></pre>
 
                         </div>
                       </div>
@@ -1056,6 +1241,7 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                               <td>
                                 <div>
                                   <p>The prepared statement to execute.</p>
+
                                 </div>
                               </td>
                             </tr>
@@ -1068,6 +1254,7 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                               <td>
                                 <div>
                                   <p>The function to be called when the execution has completed.</p>
+
                                 </div>
                               </td>
                             </tr>
@@ -1080,9 +1267,9 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:20SwiftKueryPostgreSQL0C13SQLConnectionC7executey0aB017PreparedStatement_p08preparedH0_SayypSgG10parametersyAE11QueryResultOc12onCompletiontF"></a>
+                    <a name="/s:FC20SwiftKueryPostgreSQL20PostgreSQLConnection7executeFT17preparedStatementP10SwiftKuery17PreparedStatement_10parametersGSaGSqP___12onCompletionFOS1_11QueryResultT__T_"></a>
                     <a name="//apple_ref/swift/Method/execute(preparedStatement:parameters:onCompletion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:20SwiftKueryPostgreSQL0C13SQLConnectionC7executey0aB017PreparedStatement_p08preparedH0_SayypSgG10parametersyAE11QueryResultOc12onCompletiontF">execute(preparedStatement:parameters:onCompletion:)</a>
+                    <a class="token" href="#/s:FC20SwiftKueryPostgreSQL20PostgreSQLConnection7executeFT17preparedStatementP10SwiftKuery17PreparedStatement_10parametersGSaGSqP___12onCompletionFOS1_11QueryResultT__T_">execute(preparedStatement:parameters:onCompletion:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1092,12 +1279,30 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                       <div class="abstract">
                         <p>Execute a prepared statement with parameters.</p>
 
+<div class="aside aside-parameter">
+    <p class="aside-title">Parameter</p>
+    Parameter preparedStatement: The prepared statement to execute.
+
+</div>
+
+<div class="aside aside-parameter">
+    <p class="aside-title">Parameter</p>
+    Parameter parameters: An array of the parameters.
+
+</div>
+
+<div class="aside aside-parameter">
+    <p class="aside-title">Parameter</p>
+    Parameter onCompletion: The function to be called when the execution has completed.
+
+</div>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">execute</span><span class="p">(</span><span class="nv">preparedStatement</span><span class="p">:</span> <span class="kt">PreparedStatement</span><span class="p">,</span> <span class="nv">parameters</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">?],</span> <span class="nv">onCompletion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt">QueryResult</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">()))</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">execute</span><span class="p">(</span><span class="nv">preparedStatement</span><span class="p">:</span> <span class="kt">PreparedStatement</span><span class="p">,</span> <span class="nv">parameters</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">?],</span> <span class="nv">onCompletion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt">QueryResult</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">()))</span></code></pre>
 
                         </div>
                       </div>
@@ -1114,6 +1319,7 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                               <td>
                                 <div>
                                   <p>The prepared statement to execute.</p>
+
                                 </div>
                               </td>
                             </tr>
@@ -1126,6 +1332,7 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                               <td>
                                 <div>
                                   <p>An array of the parameters.</p>
+
                                 </div>
                               </td>
                             </tr>
@@ -1138,6 +1345,7 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                               <td>
                                 <div>
                                   <p>The function to be called when the execution has completed.</p>
+
                                 </div>
                               </td>
                             </tr>
@@ -1150,9 +1358,9 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:20SwiftKueryPostgreSQL0C13SQLConnectionC7executey0aB017PreparedStatement_p08preparedH0_s10DictionaryVySSypSgG10parametersyAE11QueryResultOc12onCompletiontF"></a>
+                    <a name="/s:FC20SwiftKueryPostgreSQL20PostgreSQLConnection7executeFT17preparedStatementP10SwiftKuery17PreparedStatement_10parametersGVs10DictionarySSGSqP___12onCompletionFOS1_11QueryResultT__T_"></a>
                     <a name="//apple_ref/swift/Method/execute(preparedStatement:parameters:onCompletion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:20SwiftKueryPostgreSQL0C13SQLConnectionC7executey0aB017PreparedStatement_p08preparedH0_s10DictionaryVySSypSgG10parametersyAE11QueryResultOc12onCompletiontF">execute(preparedStatement:parameters:onCompletion:)</a>
+                    <a class="token" href="#/s:FC20SwiftKueryPostgreSQL20PostgreSQLConnection7executeFT17preparedStatementP10SwiftKuery17PreparedStatement_10parametersGVs10DictionarySSGSqP___12onCompletionFOS1_11QueryResultT__T_">execute(preparedStatement:parameters:onCompletion:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1162,12 +1370,30 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                       <div class="abstract">
                         <p>Execute a prepared statement with parameters.</p>
 
+<div class="aside aside-parameter">
+    <p class="aside-title">Parameter</p>
+    Parameter preparedStatement: The prepared statement to execute.
+
+</div>
+
+<div class="aside aside-parameter">
+    <p class="aside-title">Parameter</p>
+    Parameter parameters: A dictionary of the parameters with parameter names as the keys.
+
+</div>
+
+<div class="aside aside-parameter">
+    <p class="aside-title">Parameter</p>
+    Parameter onCompletion: The function to be called when the execution has completed.
+
+</div>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">execute</span><span class="p">(</span><span class="nv">preparedStatement</span><span class="p">:</span> <span class="kt">PreparedStatement</span><span class="p">,</span> <span class="nv">parameters</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span><span class="kt">Any</span><span class="p">?],</span> <span class="nv">onCompletion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt">QueryResult</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">()))</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">execute</span><span class="p">(</span><span class="nv">preparedStatement</span><span class="p">:</span> <span class="kt">PreparedStatement</span><span class="p">,</span> <span class="nv">parameters</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span><span class="kt">Any</span><span class="p">?],</span> <span class="nv">onCompletion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt">QueryResult</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">()))</span></code></pre>
 
                         </div>
                       </div>
@@ -1184,6 +1410,7 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                               <td>
                                 <div>
                                   <p>The prepared statement to execute.</p>
+
                                 </div>
                               </td>
                             </tr>
@@ -1196,6 +1423,7 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                               <td>
                                 <div>
                                   <p>A dictionary of the parameters with parameter names as the keys.</p>
+
                                 </div>
                               </td>
                             </tr>
@@ -1208,6 +1436,7 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                               <td>
                                 <div>
                                   <p>The function to be called when the execution has completed.</p>
+
                                 </div>
                               </td>
                             </tr>
@@ -1220,9 +1449,9 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:20SwiftKueryPostgreSQL0C13SQLConnectionC7releasey0aB017PreparedStatement_p08preparedH0_yAE11QueryResultOc12onCompletiontF"></a>
+                    <a name="/s:FC20SwiftKueryPostgreSQL20PostgreSQLConnection7releaseFT17preparedStatementP10SwiftKuery17PreparedStatement_12onCompletionFOS1_11QueryResultT__T_"></a>
                     <a name="//apple_ref/swift/Method/release(preparedStatement:onCompletion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:20SwiftKueryPostgreSQL0C13SQLConnectionC7releasey0aB017PreparedStatement_p08preparedH0_yAE11QueryResultOc12onCompletiontF">release(preparedStatement:onCompletion:)</a>
+                    <a class="token" href="#/s:FC20SwiftKueryPostgreSQL20PostgreSQLConnection7releaseFT17preparedStatementP10SwiftKuery17PreparedStatement_12onCompletionFOS1_11QueryResultT__T_">release(preparedStatement:onCompletion:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1232,12 +1461,24 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                       <div class="abstract">
                         <p>Release a prepared statement.</p>
 
+<div class="aside aside-parameter">
+    <p class="aside-title">Parameter</p>
+    Parameter preparedStatement: The prepared statement to release.
+
+</div>
+
+<div class="aside aside-parameter">
+    <p class="aside-title">Parameter</p>
+    Parameter onCompletion: The function to be called when the execution has completed.
+
+</div>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">release</span><span class="p">(</span><span class="nv">preparedStatement</span><span class="p">:</span> <span class="kt">PreparedStatement</span><span class="p">,</span> <span class="nv">onCompletion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt">QueryResult</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">()))</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">release</span><span class="p">(</span><span class="nv">preparedStatement</span><span class="p">:</span> <span class="kt">PreparedStatement</span><span class="p">,</span> <span class="nv">onCompletion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt">QueryResult</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">()))</span></code></pre>
 
                         </div>
                       </div>
@@ -1254,6 +1495,7 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                               <td>
                                 <div>
                                   <p>The prepared statement to release.</p>
+
                                 </div>
                               </td>
                             </tr>
@@ -1266,6 +1508,7 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                               <td>
                                 <div>
                                   <p>The function to be called when the execution has completed.</p>
+
                                 </div>
                               </td>
                             </tr>
@@ -1278,9 +1521,9 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:20SwiftKueryPostgreSQL0C13SQLConnectionC16startTransactionyy0aB011QueryResultOc12onCompletion_tF"></a>
+                    <a name="/s:FC20SwiftKueryPostgreSQL20PostgreSQLConnection16startTransactionFT12onCompletionFO10SwiftKuery11QueryResultT__T_"></a>
                     <a name="//apple_ref/swift/Method/startTransaction(onCompletion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:20SwiftKueryPostgreSQL0C13SQLConnectionC16startTransactionyy0aB011QueryResultOc12onCompletion_tF">startTransaction(onCompletion:)</a>
+                    <a class="token" href="#/s:FC20SwiftKueryPostgreSQL20PostgreSQLConnection16startTransactionFT12onCompletionFO10SwiftKuery11QueryResultT__T_">startTransaction(onCompletion:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1290,12 +1533,18 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                       <div class="abstract">
                         <p>Start a transaction.</p>
 
+<div class="aside aside-parameter">
+    <p class="aside-title">Parameter</p>
+    Parameter onCompletion: The function to be called when the execution of start transaction command has completed.
+
+</div>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">startTransaction</span><span class="p">(</span><span class="nv">onCompletion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt">QueryResult</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">()))</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">startTransaction</span><span class="p">(</span><span class="nv">onCompletion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt">QueryResult</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">()))</span></code></pre>
 
                         </div>
                       </div>
@@ -1312,6 +1561,7 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                               <td>
                                 <div>
                                   <p>The function to be called when the execution of start transaction command has completed.</p>
+
                                 </div>
                               </td>
                             </tr>
@@ -1324,9 +1574,9 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:20SwiftKueryPostgreSQL0C13SQLConnectionC6commityy0aB011QueryResultOc12onCompletion_tF"></a>
+                    <a name="/s:FC20SwiftKueryPostgreSQL20PostgreSQLConnection6commitFT12onCompletionFO10SwiftKuery11QueryResultT__T_"></a>
                     <a name="//apple_ref/swift/Method/commit(onCompletion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:20SwiftKueryPostgreSQL0C13SQLConnectionC6commityy0aB011QueryResultOc12onCompletion_tF">commit(onCompletion:)</a>
+                    <a class="token" href="#/s:FC20SwiftKueryPostgreSQL20PostgreSQLConnection6commitFT12onCompletionFO10SwiftKuery11QueryResultT__T_">commit(onCompletion:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1336,12 +1586,18 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                       <div class="abstract">
                         <p>Commit the current transaction.</p>
 
+<div class="aside aside-parameter">
+    <p class="aside-title">Parameter</p>
+    Parameter onCompletion: The function to be called when the execution of commit transaction command has completed.
+
+</div>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">commit</span><span class="p">(</span><span class="nv">onCompletion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt">QueryResult</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">()))</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">commit</span><span class="p">(</span><span class="nv">onCompletion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt">QueryResult</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">()))</span></code></pre>
 
                         </div>
                       </div>
@@ -1358,6 +1614,7 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                               <td>
                                 <div>
                                   <p>The function to be called when the execution of commit transaction command has completed.</p>
+
                                 </div>
                               </td>
                             </tr>
@@ -1370,9 +1627,9 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:20SwiftKueryPostgreSQL0C13SQLConnectionC8rollbackyy0aB011QueryResultOc12onCompletion_tF"></a>
+                    <a name="/s:FC20SwiftKueryPostgreSQL20PostgreSQLConnection8rollbackFT12onCompletionFO10SwiftKuery11QueryResultT__T_"></a>
                     <a name="//apple_ref/swift/Method/rollback(onCompletion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:20SwiftKueryPostgreSQL0C13SQLConnectionC8rollbackyy0aB011QueryResultOc12onCompletion_tF">rollback(onCompletion:)</a>
+                    <a class="token" href="#/s:FC20SwiftKueryPostgreSQL20PostgreSQLConnection8rollbackFT12onCompletionFO10SwiftKuery11QueryResultT__T_">rollback(onCompletion:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1382,12 +1639,18 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                       <div class="abstract">
                         <p>Rollback the current transaction.</p>
 
+<div class="aside aside-parameter">
+    <p class="aside-title">Parameter</p>
+    Parameter onCompletion: The function to be called when the execution of rolback transaction command has completed.
+
+</div>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">rollback</span><span class="p">(</span><span class="nv">onCompletion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt">QueryResult</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">()))</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">rollback</span><span class="p">(</span><span class="nv">onCompletion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt">QueryResult</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">()))</span></code></pre>
 
                         </div>
                       </div>
@@ -1404,6 +1667,7 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                               <td>
                                 <div>
                                   <p>The function to be called when the execution of rolback transaction command has completed.</p>
+
                                 </div>
                               </td>
                             </tr>
@@ -1416,9 +1680,9 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:20SwiftKueryPostgreSQL0C13SQLConnectionC6createySS9savepoint_y0aB011QueryResultOc12onCompletiontF"></a>
+                    <a name="/s:FC20SwiftKueryPostgreSQL20PostgreSQLConnection6createFT9savepointSS12onCompletionFO10SwiftKuery11QueryResultT__T_"></a>
                     <a name="//apple_ref/swift/Method/create(savepoint:onCompletion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:20SwiftKueryPostgreSQL0C13SQLConnectionC6createySS9savepoint_y0aB011QueryResultOc12onCompletiontF">create(savepoint:onCompletion:)</a>
+                    <a class="token" href="#/s:FC20SwiftKueryPostgreSQL20PostgreSQLConnection6createFT9savepointSS12onCompletionFO10SwiftKuery11QueryResultT__T_">create(savepoint:onCompletion:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1428,12 +1692,24 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                       <div class="abstract">
                         <p>Create a savepoint.</p>
 
+<div class="aside aside-parameter">
+    <p class="aside-title">Parameter</p>
+    Parameter savepoint: The name to  be given to the created savepoint.
+
+</div>
+
+<div class="aside aside-parameter">
+    <p class="aside-title">Parameter</p>
+    Parameter onCompletion: The function to be called when the execution of create savepoint command has completed.
+
+</div>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">create</span><span class="p">(</span><span class="nv">savepoint</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">onCompletion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt">QueryResult</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">()))</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">create</span><span class="p">(</span><span class="nv">savepoint</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">onCompletion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt">QueryResult</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">()))</span></code></pre>
 
                         </div>
                       </div>
@@ -1450,6 +1726,7 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                               <td>
                                 <div>
                                   <p>The name to  be given to the created savepoint.</p>
+
                                 </div>
                               </td>
                             </tr>
@@ -1462,6 +1739,7 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                               <td>
                                 <div>
                                   <p>The function to be called when the execution of create savepoint command has completed.</p>
+
                                 </div>
                               </td>
                             </tr>
@@ -1474,9 +1752,9 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:20SwiftKueryPostgreSQL0C13SQLConnectionC8rollbackySS2to_y0aB011QueryResultOc12onCompletiontF"></a>
+                    <a name="/s:FC20SwiftKueryPostgreSQL20PostgreSQLConnection8rollbackFT2toSS12onCompletionFO10SwiftKuery11QueryResultT__T_"></a>
                     <a name="//apple_ref/swift/Method/rollback(to:onCompletion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:20SwiftKueryPostgreSQL0C13SQLConnectionC8rollbackySS2to_y0aB011QueryResultOc12onCompletiontF">rollback(to:onCompletion:)</a>
+                    <a class="token" href="#/s:FC20SwiftKueryPostgreSQL20PostgreSQLConnection8rollbackFT2toSS12onCompletionFO10SwiftKuery11QueryResultT__T_">rollback(to:onCompletion:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1486,12 +1764,24 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                       <div class="abstract">
                         <p>Rollback the current transaction to the specified savepoint.</p>
 
+<div class="aside aside-parameter">
+    <p class="aside-title">Parameter</p>
+    Parameter to savepoint: The name of the savepoint to rollback to.
+
+</div>
+
+<div class="aside aside-parameter">
+    <p class="aside-title">Parameter</p>
+    Parameter onCompletion: The function to be called when the execution of rolback transaction command has completed.
+
+</div>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">rollback</span><span class="p">(</span><span class="n">to</span> <span class="nv">savepoint</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">onCompletion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt">QueryResult</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">()))</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">rollback</span><span class="p">(</span><span class="n">to</span> <span class="nv">savepoint</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">onCompletion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt">QueryResult</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">()))</span></code></pre>
 
                         </div>
                       </div>
@@ -1502,12 +1792,26 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                             <tr>
                               <td>
                                 <code>
+                                <em>to savepoint</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name of the savepoint to rollback to.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
                                 <em>onCompletion</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
                                   <p>The function to be called when the execution of rolback transaction command has completed.</p>
+
                                 </div>
                               </td>
                             </tr>
@@ -1520,9 +1824,9 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:20SwiftKueryPostgreSQL0C13SQLConnectionC7releaseySS9savepoint_y0aB011QueryResultOc12onCompletiontF"></a>
+                    <a name="/s:FC20SwiftKueryPostgreSQL20PostgreSQLConnection7releaseFT9savepointSS12onCompletionFO10SwiftKuery11QueryResultT__T_"></a>
                     <a name="//apple_ref/swift/Method/release(savepoint:onCompletion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:20SwiftKueryPostgreSQL0C13SQLConnectionC7releaseySS9savepoint_y0aB011QueryResultOc12onCompletiontF">release(savepoint:onCompletion:)</a>
+                    <a class="token" href="#/s:FC20SwiftKueryPostgreSQL20PostgreSQLConnection7releaseFT9savepointSS12onCompletionFO10SwiftKuery11QueryResultT__T_">release(savepoint:onCompletion:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1532,12 +1836,24 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                       <div class="abstract">
                         <p>Release a savepoint.</p>
 
+<div class="aside aside-parameter">
+    <p class="aside-title">Parameter</p>
+    Parameter savepoint: The name of the savepoint to release.
+
+</div>
+
+<div class="aside aside-parameter">
+    <p class="aside-title">Parameter</p>
+    Parameter onCompletion: The function to be called when the execution of release savepoint command has completed.
+
+</div>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">release</span><span class="p">(</span><span class="nv">savepoint</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">onCompletion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt">QueryResult</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">()))</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">release</span><span class="p">(</span><span class="nv">savepoint</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">onCompletion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt">QueryResult</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">()))</span></code></pre>
 
                         </div>
                       </div>
@@ -1554,6 +1870,7 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                               <td>
                                 <div>
                                   <p>The name of the savepoint to release.</p>
+
                                 </div>
                               </td>
                             </tr>
@@ -1566,6 +1883,7 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
                               <td>
                                 <div>
                                   <p>The function to be called when the execution of release savepoint command has completed.</p>
+
                                 </div>
                               </td>
                             </tr>
@@ -1583,8 +1901,8 @@ Please see <a href="https://www.postgresql.org/docs/8.0/static/libpq-exec.html">
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external">IBM</a>. All rights reserved. (Last updated: 2019-01-07)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2017 <a class="link" href="" target="_blank" rel="external">IBM</a>. All rights reserved. (Last updated: 2017-06-01)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

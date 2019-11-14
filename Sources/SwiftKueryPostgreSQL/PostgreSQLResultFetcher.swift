@@ -106,7 +106,7 @@ public class PostgreSQLResultFetcher: ResultFetcher {
         let data = Data(bytes: value!, count: count)
         
         let type = PostgreSQLType(rawValue: PQftype(queryResult, column))
-
+        
         if PQfformat(queryResult, column) == 0 {
             return (String(data: data, encoding: String.Encoding.utf8) ?? "", nil)
         }
@@ -261,9 +261,6 @@ public class PostgreSQLResultFetcher: ResultFetcher {
                 
             case .bool:
                 return (Bool(value.withMemoryRebound(to: Bool.self, capacity: 1) { $0.pointee }), nil)
-
-            case .bytea:
-                return (data, nil)
 
             case .uuid:
                 let uuid = UUID(uuid: uuid_t(value.withMemoryRebound(to: uuid_t.self, capacity: 1) { $0.pointee }))

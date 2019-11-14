@@ -1,5 +1,5 @@
 /**
- Copyright IBM Corporation 2016, 2017, 2018, 2019
+ Copyright IBM Corporation 2016, 2017, 2018
  
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
@@ -75,7 +75,7 @@ public class PostgreSQLConnection: Connection {
             for option in options {
                 switch option {
                 case .sslmode(let value):
-                    result += " sslmode = \(value)"                
+                    result += " sslmode = \(value)"
                 case .options(let value):
                     result += " options = \(value)"
                 case .databaseName(let value):
@@ -406,30 +406,63 @@ public class PostgreSQLConnection: Connection {
                 return
             }
 
-            let parameterSet = PostgreSQLParameterSet(parameters: parameters)
+            var parameterPointers = [UnsafeMutablePointer<UInt8>?]()
+            var parameterData = [UnsafePointer<Int8>?]()
 
-            do {
-                if let query = query {
-                    try parameterSet.withUnsafeBufferPointers {
-                        PQsendQueryParams(connection, query, Int32(parameters.count), nil, $0.values, $0.lengths, $0.formats, 1)
-                    }
-                } else {
-                    guard let statement = preparedStatement as? PostgreSQLPreparedStatement else {
-                        // We should never get here as the prepared statement parameter has already been validated as a PostgreSQLPreparedStatement
-                        return assertionFailure("Unexpected invalid pepared statement")
-                    }
+            // Reserve capacity of pointers, otherwise it may cause performance issues
+            if parameters.count > 0 {
+                parameterPointers.reserveCapacity(parameters.count)
+                parameterData.reserveCapacity(parameters.count)
+            }
 
-                    try parameterSet.withUnsafeBufferPointers {
-                        PQsendQueryPrepared(connection, statement.name, Int32(parameters.count), $0.values, $0.lengths, $0.formats, 1)
+            // At the moment we only create string parameters. Binary parameters should be added.
+            for parameter in parameters {
+                if let parameter = parameter {
+                    let parameterString = String(describing: parameter)
+                    let count = parameterString.lengthOfBytes(using: .utf8) + 1
+                    // Convert the string value to a UTF8 string, we cannot rely on UnsafeRawPointer(String) to return a UTF8 string that is null terminated so explicitly terminate it.
+                    guard let parameterUTF8_data = parameterString.data(using: .utf8) else {
+                        return onCompletion(.error(QueryError.syntaxError("Could not convert parameter to UTF8 string")))
+                    }
+                    // Allocate memory
+                    let parameter_pointer = UnsafeMutablePointer<UInt8>.allocate(capacity: count)
+                    parameterUTF8_data.copyBytes(to: parameter_pointer, count: count-1)
+                    // Force null termination of C UTF8 string
+                    parameter_pointer[count-1] = 0
+                    // parameterPointers will be used later to free memory
+                    parameterPointers.append(parameter_pointer)
+                    parameter_pointer.withMemoryRebound(to: Int8.self, capacity: count) { parameter_pointer in
+                        parameterData.append(parameter_pointer)
                     }
                 }
-
-                PQsetSingleRowMode(connection)
-                self.processQueryResult(query: query ?? "Execution of prepared statement \(preparedStatement!)", onCompletion: onCompletion)
-            } catch {
-                // parameterSet.withUnsafeBufferPointers will throw if a parameter cannot be converted to data
-                onCompletion(.error(error))
+                else {
+                    parameterData.append(nil)
+                }
             }
+
+            // Ensure pointers are freed upon exiting this closure
+            defer {
+                for pointer in parameterPointers {
+                    free(pointer)
+                }
+            }
+
+            if let query = query {
+                _ = parameterData.withUnsafeBufferPointer { buffer in
+                    PQsendQueryParams(connection, query, Int32(parameters.count), nil, buffer.isEmpty ? nil : buffer.baseAddress, nil, nil, 1)
+                }
+            } else {
+                guard let statement = preparedStatement as? PostgreSQLPreparedStatement else {
+                    // We should never get here as the prepared statement parameter has already been validated as a PostgreSQLPreparedStatement
+                    return assertionFailure("Unexpected invalid pepared statement")
+                }
+                _ = parameterData.withUnsafeBufferPointer { buffer in
+                    PQsendQueryPrepared(connection, statement.name, Int32(parameters.count), buffer.isEmpty ? nil : buffer.baseAddress, nil, nil, 1)
+                }
+            }
+
+            PQsetSingleRowMode(connection)
+            self.processQueryResult(query: query ?? "Execution of prepared statement \(preparedStatement!)", onCompletion: onCompletion)
         }
     }
 
@@ -557,9 +590,8 @@ public class PostgreSQLConnection: Connection {
     }
 
     private func buildQuery(_ query: Query) throws  -> String {
-        // NOTE: The following call into SwiftKuery does not pack binary types
-        // properly - it still uses String(describing:) instead of yielding a Data object.
         var postgresQuery = try query.build(queryBuilder: queryBuilder)
+
         if let insertQuery = query as? Insert, insertQuery.returnID {
             let columns = insertQuery.table.columns.filter { $0.isPrimaryKey && $0.autoIncrement }
 
@@ -652,8 +684,14 @@ class PostgreSQLColumnBuilder: ColumnCreator {
         if column.isUnique {
             result += " UNIQUE"
         }
-        if let defaultValue = getDefaultValue(for: column, queryBuilder: queryBuilder) {
-            result += " DEFAULT " + defaultValue
+        if let defaultValue = column.defaultValue {
+            var packedType: String
+            do {
+                packedType = try packType(defaultValue, queryBuilder: queryBuilder)
+            } catch {
+                return nil
+            }
+            result += " DEFAULT " + packedType
         }
         if let checkExpression = column.checkExpression {
             result += checkExpression.contains(column.name) ? " CHECK (" + checkExpression.replacingOccurrences(of: column.name, with: "\"\(column.name)\"") + ")" : " CHECK (" + checkExpression + ")"
@@ -674,6 +712,25 @@ class PostgreSQLColumnBuilder: ColumnCreator {
             return "bigserial "
         default:
             return nil
+        }
+    }
+
+    func packType(_ item: Any, queryBuilder: QueryBuilder) throws -> String {
+        switch item {
+        case let val as String:
+            return "'\(val)'"
+        case let val as Bool:
+            return val ? queryBuilder.substitutions[QueryBuilder.QuerySubstitutionNames.booleanTrue.rawValue]
+                : queryBuilder.substitutions[QueryBuilder.QuerySubstitutionNames.booleanFalse.rawValue]
+        case let val as Parameter:
+            return try val.build(queryBuilder: queryBuilder)
+        case let value as Date:
+            if let dateFormatter = queryBuilder.dateFormatter {
+                return dateFormatter.string(from: value)
+            }
+            return "'\(String(describing: value))'"
+        default:
+            return String(describing: item)
         }
     }
 }

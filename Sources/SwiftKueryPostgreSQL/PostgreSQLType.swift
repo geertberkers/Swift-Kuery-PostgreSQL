@@ -42,8 +42,6 @@ enum PostgreSQLType: UInt32 {
     case timetz = 1266
     case timestamp = 1114
     case timestamptz = 1184
-
-    case bytea = 17
-
+    
     case uuid = 2950
 }
